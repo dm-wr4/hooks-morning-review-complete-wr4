@@ -3,7 +3,7 @@ const massive = require('massive')
 const session = require('express-session')
 const authCtrl = require('./controllers/authController')
 require('dotenv').config()
-const tankCtrl = require('./tankController')
+const tankCtrl = require('./controllers/tankController')
 
 const app = express()
 

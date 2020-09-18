@@ -2,10 +2,12 @@ module.exports = {
     getTanks: async (req,res) => {
     const db = req.app.get('db')
        const tanks = await db.get_tanks()
-    //    console.log(req.query)
        const {country_id} = req.params
        const {search, patriotic} = req.query
-    //    console.log(!search, !patriotic)
+
+
+    //An example of what the postman test url might be:   http://localhost:4545/api/tanks/1?search=sher&patriotic=true
+
 
     // If patriotic is true AND there is a search string, the endpoint should respond with: all the tanks where the tank name contains the search string.
     // If patriotic is false AND there is no search string, the endpoint should respond with: all the tanks that are NOT from the same country
