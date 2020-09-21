@@ -49,7 +49,9 @@ class StateApp extends React.Component {
             <div className="App">
                 <input placeholder='search' value={search} name='search' onChange={(e) => this.handleInput(e)}/>
                 <input type='number' placeholder='Country ID' value={countryId} name='countryId' onChange={(e) => this.handleInput(e)}/>
+
                 <input type='checkbox' placeholder='Patriotic?' name='patriotic' onChange={(e) => this.togglePatriotic()}/>
+                
                 <button onClick={() => this.getTanks()}>Filter</button>
                 {tanks.map(tank => {
                   return (

@@ -1,16 +1,3 @@
-set up .env with connection string, server port and session secret. 
+changed the root component in index.js to be Hooks.js instead of App.js
 
-## Auth and testing with Postman
-
-### build out:
-- register
-- login
-
-## filtering with queries and params
-
-### DON'T FORGET TO ADD PARAM TO TANKS ENDPOINT URL
-
-### build out: 
-- country_id param
-- search (string)
-- patriotic (boolean)
+re-created the App.js component functionality in Hooks.js using hooks
